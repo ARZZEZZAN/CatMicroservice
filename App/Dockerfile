@@ -1,5 +1,5 @@
 FROM openjdk:18-alpine
 
-COPY build/libs/App-plain.jar /app.jar
+COPY app.jar /app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
