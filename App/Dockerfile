@@ -1,4 +1,6 @@
-FROM openjdk:18-alpine
+FROM alpine:3.13
+
+RUN apk add openjdk11
 
 COPY app.jar /app.jar
 
